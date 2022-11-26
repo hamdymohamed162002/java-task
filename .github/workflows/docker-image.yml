@@ -9,14 +9,15 @@ on:
 jobs:
 
   build:
-
-    runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
     - name: "Login to Docker Hub"
       run: docker login --username hamdymohamed162 --password dckr_pat_jG9u9zpUuc0xEovQ4IWZyB57QFE
+      
     -name: "Bulding docker image"
      run: docker build -t hamdymohamed162/myimage .
+
     -name: "pushing to docker"
      run: docker push
