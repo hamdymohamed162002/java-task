@@ -21,4 +21,4 @@ jobs:
       run: docker build -t hamdymohamed162/myimage .
 
     - name: "pushing to docker"
-      run: docker push
+      run: docker push hamdymohamed162/myimage
